@@ -1,11 +1,10 @@
 <div id="$HolderID" class="form-group field<% if $extraClass %> $extraClass<% end_if %>">
     <% if $Title %>
-    	<label for="$ID" id="title-$ID" class="form__field-label">$Title</label>
+        <label for="$ID" id="title-$ID" class="form__field-label">$Title</label>
     <% end_if %>
-	<div id="$ID" <% include AriaAttributes %>
+    <div id="$ID" <% include SilverStripe/Forms/AriaAttributes %>
 		class="form__fieldgroup form__field-holder
 			<% if not $Title %> form__field-holder--no-label<% end_if %>
-			<% if $Zebra %> form__fieldgroup-zebra<% end_if %>
 			<% if $extraClass %> $extraClass<% end_if %>"
 	>
 		$Field

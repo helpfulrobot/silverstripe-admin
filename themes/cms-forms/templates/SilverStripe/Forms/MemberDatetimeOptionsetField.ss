@@ -1,4 +1,4 @@
-<div $AttributesHTML <% include AriaAttributes %>>
+<div $AttributesHTML <% include SilverStripe/Forms/AriaAttributes %>>
 	<% loop $Options %>
 		<div class="radio $Class">
 			<label>
